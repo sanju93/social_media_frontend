@@ -1,0 +1,90 @@
+.Strangers {
+  height: 85vh;
+  width: 98.5vw;
+  border: 2px dashed blue;
+  background-color: skyblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Strangers .strangerContainer {
+  height: 80%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+  justify-content: space-around;
+  border: 3px double white;
+  border-radius: 10px;
+}
+
+.Strangers .strangerContainer input[type="text"] {
+  width: 80%;
+  height: 10%;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: large;
+  font-family: cursive;
+}
+
+.Strangers .strangerContainer input[type="text"]:focus {
+  border: 4px solid whitesmoke;
+}
+
+.Strangers .strangerContainer .users {
+  height: 80%;
+  width: 84%;
+  border: 2px solid whitesmoke;
+  overflow: scroll;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.addFriends {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.users h3,
+div {
+  margin: none;
+}
+.users span {
+  color: darkgray;
+  margin-left: 35%;
+  font-size: larger;
+}
+.people {
+  width: 100%;
+  height: 60px;
+  border: 2px solid whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+}
+.people div:nth-child(1) {
+  width: 50%;
+  text-align: center;
+}
+
+.people div:nth-child(2) {
+  width: 50%;
+}
+
+.people div p {
+  font-weight: 550;
+  font-size: large;
+}
