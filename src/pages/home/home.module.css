@@ -3,7 +3,7 @@
   height: 85vh;
   display: flex;
   flex-direction: row;
-  background-color: aqua;
+  background-color: white;
 }
 
 .container .posts {
@@ -30,8 +30,42 @@ form {
 
 /* friends */
 
-.friendsContainer{
-  height : 100%;
-  width : 100%;
+.friendsContainer {
+  height: 100%;
+  width: 100%;
   border: 1px dashed blue;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  padding-top: 2%;
+}
+
+.friend {
+  width: 95%;
+  height: 15%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.friend:hover {
+  background-color: whitesmoke;
+  box-shadow: 20px 20px white;
+}
+
+.friend div img {
+  height: 90%;
+  width: 90%;
+}
+
+.friend p {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 0;
+}
+.friend div {
+  margin-right: 3%;
 }

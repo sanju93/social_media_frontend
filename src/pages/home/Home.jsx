@@ -33,7 +33,7 @@ function Home() {
     }
 
       fetchFriends();
-  },[])
+  },[context])
   return (
     <>
       <div className={`${style.container}`}>
@@ -46,7 +46,8 @@ function Home() {
             <div className={`${style.friendsContainer}`}>
               {friends.length === 0 ? <p>You Don't have any friends</p>:friends.map((item,index) => {
                  return (
-                  <div className={`${style.friend}`}>
+                  <div className={`${style.friend}`} key={index}>
+                     <div> <img src="https://cdn-icons-png.flaticon.com/128/4333/4333609.png" alt="avatar"></img></div>
                       <p>{item.name}</p>
                   </div>
                  )

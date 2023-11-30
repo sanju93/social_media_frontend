@@ -35,7 +35,7 @@ function AddFriends() {
   }, [click]);
 
   async function handleCofirmRequest(id) {
-    console.log(id);
+    
     try {
       let res = await axios({
         url: `${url}/users/friendRequestConfirm/${id}`,
