@@ -69,3 +69,49 @@ form {
 .friend div {
   margin-right: 3%;
 }
+
+.chatBox{
+  height : 250px;
+  width : 300px;
+  border : 1px solid black;
+  position: absolute;
+  left : 50%;
+  top: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.chatBox .chatContainer{
+  height: 85%;
+  width : 100%;
+  overflow: scroll;
+}
+
+
+.chatBox form{
+  background-color: inherit;
+  height : 15%;
+  width : 100%;
+  display: flex;
+  flex-direction: row;
+  border : none;
+  justify-content: space-around;
+ 
+
+}
+
+.chatBox form input[type= "text"]{
+  width : 70%;
+  height : 80%;
+
+}
+
+.chatBox form input[type = "submit"]{
+  width : 20%;
+  height : 90%;
+}
+
+
+
